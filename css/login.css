@@ -1,0 +1,146 @@
+.form-floating {
+  position: relative;
+}
+
+.form-floating input {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.form-floating label {
+  padding-left: 35px;
+}
+
+.form-floating .fa-envelope,
+.form-floating .fa-lock {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  font-size: 20px;
+  color: white;
+  animation: fall-snow linear infinite;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  padding: 25px;
+  position: relative;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-floating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+}
+
+.form-floating .icon {
+  color: #888;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.form-floating input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  padding-left: 40px;
+  background: transparent;
+  color: #333;
+}
+
+.form-floating input:focus {
+  border: none;
+  background-color: transparent;
+}
+
+.form-floating input::placeholder {
+  color: #aaa;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animasi salju */
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: rgb(160, 217, 223);
+  user-select: none;
+  z-index: 100;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Modifikasi ukuran dan kecepatan salju */
+@keyframes fall-snow {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes fall-snow {
+  0% {
+    top: -10px;
+    opacity: 0.8;
+  }
+
+  100% {
+    top: 100vh;
+    opacity: 0.3;
+  }
+}
