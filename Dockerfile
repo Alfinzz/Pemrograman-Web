@@ -16,12 +16,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && docker-php-ext-install \
        pdo \
        pdo_mysql \
-       mbstring \
-       exif \
-       pcntl \
-       bcmath \
-       gd \
-       opcache \
+    mysqli \
+    mbstring \
+    exif \
+    pcntl \
+    bcmath \
+    gd \
+    opcache \
+    && docker-php-ext-install mysqli \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set Working Directory
