@@ -1,7 +1,12 @@
 <?php
 session_start();
+$env = parse_ini_file('.env');
+$dbHost = $env["DB_HOST"];
+$dbUsername = $env["DB_USERNAME"];
+$dbPassword = $env["DB_PASSWORD"];
+$dbName = $env["DB_NAME"];
 
-$conn = mysqli_connect("localhost", "root", "", "stock_barang");
+$conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
 
 // tambah barang baru
 if (isset($_POST['tambahbarangbaru'])) {

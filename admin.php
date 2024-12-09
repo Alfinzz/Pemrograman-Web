@@ -38,6 +38,10 @@ require 'cek.php';
                             <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
                             Barang Keluar
                         </a>
+                        <a class="nav-link" href="keluar.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
+                            Peminjaman Barang
+                        </a>
                         <a class="nav-link" href="admin.php">
                              <div class="sb-nav-link-icon"><i class="bi bi-person-fill"></i></div>
                              Kelola Login
