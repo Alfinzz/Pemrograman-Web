@@ -1,6 +1,8 @@
 <?php
 session_start();
-$env = parse_ini_file('.env');
+if (file_exists('.env')) {
+    $env = parse_ini_file('.env');
+}
 $dbHost = $env["DB_HOST"];
 $dbUsername = $env["DB_USERNAME"];
 $dbPassword = $env["DB_PASSWORD"];
